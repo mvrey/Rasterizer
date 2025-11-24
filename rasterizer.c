@@ -55,7 +55,7 @@ static float cubef [24] = {
 
 
 /// Sets the color of a pixel
-inline void setColorPixel(unsigned int* pixels, int x, int y, int color) {
+static inline void setColorPixel(unsigned int* pixels, int x, int y, int color) {
   pixels [ x + y] = color;
 }
 
@@ -100,7 +100,7 @@ static Point rotatePoint(Point p, float rads, int axis) {
 extern int min(int n1, int n2, int n3, int n4);
 extern int max(int n1, int n2, int n3, int n4);
 #else
-inline int min(int n1, int n2, int n3, int n4) {
+static inline int min(int n1, int n2, int n3, int n4) {
   float minn = n1;
 
   if (n2 < minn) minn = n2;
@@ -111,7 +111,7 @@ inline int min(int n1, int n2, int n3, int n4) {
 }
 
 
-inline int max(int n1, int n2, int n3, int n4) {
+static inline int max(int n1, int n2, int n3, int n4) {
   float maxn = n1;
 
   if (n2 > maxn) maxn = n2;
