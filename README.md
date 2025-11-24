@@ -5,7 +5,7 @@ Simple software rasterizer that draws a rotating, multi‑colored cube in an SDL
 <u>The cube math and rasterization are implemented entirely in pure C with a dash of optional handwritten assembly—no external math or rendering libraries are used for calculating or drawing the cube.</u>
 
 ## Demo
-![Rotating cube demo](rotatingcube.png)
+![Rotating cube demo](img/rotatingcube.gif)
 
 ## Features
 - Pure C implementation with a straightforward half‑space rasterizer
